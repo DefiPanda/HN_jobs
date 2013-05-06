@@ -1,11 +1,16 @@
 HN_jobs
 =======
 
+Copyright (c) 2013 Jack Wang  
+  
+What is HN_jobs?
+-------------  
 HN_job is a python script to post your job application to all opening listed in HN who's hiring and more.  
   
 By default it will return all the emails you can apply job to listed in HN who's hiring March, April and May 2013. You can add additional urls you would like HN_jobs to search for you as parameters at the end of command  
 
-Usage:  
+Usage  
+-------------  
 python mail.py [optional -send your_email your_password email_title email_body your_resume_title] [optional additional urls]  
 
 Example:  
