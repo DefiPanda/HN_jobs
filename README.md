@@ -18,4 +18,5 @@ without "-send" parameters, HN_jobs will just print out an array of emails mined
 ![ScreenShot](https://raw.github.com/jw2013/HN_jobs/master/screenshot.png)
   
   
-Happy job hunting!
+Happy job hunting!  
+=======
