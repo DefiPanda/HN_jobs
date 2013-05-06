@@ -43,24 +43,30 @@ def Connect2Web(url):
 
 def findAllEmails(content):
   email_pattern = re.compile('([\w\-\.]+@(\w[\w\-]+\.)+[\w\-]+)')
+  all_emails = []
   for match in email_pattern.findall(content):
-    print match[0]
+    all_emails.append(match[0])
+  return all_emails
 
 def processRequests(urls):
+  all_emails = []
   for url in urls:
     content = Connect2Web(url)
-    findAllEmails(content)
+    all_emails.extend(findAllEmails(content))
+  return all_emails
 
 def main():
   urls = ["https://news.ycombinator.com/item?id=5637663","https://news.ycombinator.com/item?id=5472746","https://news.ycombinator.com/item?id=5304169"]
   starting_url_index = 1
-  if(sys.argv[1] == '-send'):
+  if(len(sys.argv) >2 and sys.argv[1] == '-send'):
     starting_url_index = 7
   for arg in sys.argv[starting_url_index:]:
     urls.append(arg)
-  processRequests(urls)
-  if(sys.argv[1] == '-send'):
-    send_mail(sys.argv[2], sys.argv[3], ["zhew@live.unc.edu"], sys.argv[4], sys.argv[5], files=[sys.argv[6]])
+  all_emails = processRequests(urls)
+  if(len(sys.argv) >2 and sys.argv[1] == '-send'):
+    send_mail(sys.argv[2], sys.argv[3], all_emails, sys.argv[4], sys.argv[5], files=[sys.argv[6]])
+  else:
+    print all_emails
 
 if __name__ == '__main__':
     main()
