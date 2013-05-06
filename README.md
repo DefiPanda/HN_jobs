@@ -12,4 +12,4 @@ Example:
 python mail.py https://news.ycombinator.com/item?id=3537881 https://news.ycombinator.com/item?id=2270790  
   
 Goal:  
-When I have time, I will write out a default mail template but you can edit with, and the program will send the tailored templated to all listed job posting emails processed by this program.
+When I have time, I will write out a default mail template that you can edit with, and the program will send the tailored templated to all listed job posting emails processed by this program.
