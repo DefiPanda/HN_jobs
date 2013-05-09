@@ -33,7 +33,7 @@ python mail_v2.0beta.py
 python mail_v2.0beta.py -send email@gmail.com passwd "Jack's Test Title" "Hey, could you please read my resume" "test.pdf"  
   
 without "-send" parameters, HN_jobs will just print out an array of emails mined at the urls we searched (all recent HN who's hiring posts). For example, when you type "python mail.py", you will get result located at:  
-[a link](https://raw.github.com/jw2013/HN_jobs/master/test_result/mail_v2.0beta_result.txt)  
+[Click here for a sample of job posting emails](https://raw.github.com/jw2013/HN_jobs/master/test_result/mail_v2.0beta_result.txt)  
 
   
 Happy job hunting!  
