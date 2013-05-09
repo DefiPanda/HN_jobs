@@ -29,8 +29,8 @@ Usage of v2.0
 -------------  
 python mail_v2.0beta.py [optional -send your_email your_password email_title email_body your_resume_title]  
 Example:  
-python mail.py  
-python mail.py -send email@gmail.com passwd "Jack's Test Title" "Hey, could you please read my resume" "test.pdf"  
+python mail_v2.0beta.py  
+python mail_v2.0beta.py -send email@gmail.com passwd "Jack's Test Title" "Hey, could you please read my resume" "test.pdf"  
   
 without "-send" parameters, HN_jobs will just print out an array of emails mined at the urls we searched (all recent HN who's hiring posts). For example, when you type "python mail.py", you will get result located at test_result/mail_v2.0beta_result.txt. 
   
