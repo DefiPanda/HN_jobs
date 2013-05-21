@@ -33,7 +33,7 @@ def send_mail(send_from, password, send_to, subject, text, files=[]):
   smtpserver.close()
 
 def Connect2Web(url):
-  #in case of HN blocks IP, it willl be on this proxy rather than your IP. So it protects you from being block from HN.
+  #in case of HN blocks IP, it will be on this proxy rather than your IP. So it protects you from being block from HN.
   proxy  = urllib2.ProxyHandler({'https': '66.42.224.222:3129'})
   #slept 5 seconds to avoid server IP block
   time.sleep(5)
